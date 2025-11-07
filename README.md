@@ -38,84 +38,89 @@ This backend demonstrates how real cloud monitoring systems work — built using
 
 ## 🧱 Architecture  
 
-```text
-AWS Resources → AWS CLI Commands → JSON Output → Backend Scripts → Frontend Dashboard
 
-AWS CLI Commands collect real resource details.
-
-Bash scripts automate data fetching and organize JSON output.
-
-Python processing scripts structure data into a unified format.
-
-Frontend fetches this processed JSON for visualization
-
-🧾 Features
-
-✅ Fetches live-like AWS data (EC2 & S3) through CLI commands
-✅ Automates process via Bash scripting
-✅ Stores resource data in real_dashboard_data.json
-✅ Provides reusable JSON structure for visualization
-✅ Demonstrates secure IAM configuration best practices
+### AWS Resources → AWS CLI Commands → JSON Output → Backend Scripts → Frontend Dashboard
 
 
-📸 Backend Execution Screenshots
+1. AWS CLI Commands collect real resource details.
+
+2. Bash scripts automate data fetching and organize JSON output.
+
+3. Python processing scripts structure data into a unified format.
+
+4. Frontend fetches this processed JSON for visualization
+
+---
+
+## 🧾 Features
+
+- ✅ Fetches live-like AWS data (EC2 & S3) through CLI commands
+- ✅ Automates process via Bash scripting
+- ✅ Stores resource data in real_dashboard_data.json
+- ✅ Provides reusable JSON structure for visualization
+- ✅ Demonstrates secure IAM configuration best practices
+
+---
+
+## 📸 Backend Execution Screenshots
 
 | No. | Screenshot Description        |
 | :-: | :---------------------------- |
-|  1  | AWS IAM Configuration         |
-|  2  | EC2 Instance Setup            |
-|  3  | S3 Bucket Creation            |
-|  4  | AWS CLI Configuration         |
-|  5  | Verifying AWS Identity        |
-|  6  | Listing EC2 Instances         |
-|  7  | Listing S3 Buckets            |
-|  8  | Fetching EC2 Instance Details |
-|  9  | Fetching S3 Bucket Details    |
-|  10 | Combining JSON Data           |
-|  11 | Bash Script Execution         |
-|  12 | Generated Output File         |
-|  13 | Data Validation               |
-|  14 | Folder Structure Overview     |
-|  15 | Python Data Formatter Script  |
-|  16 | Resource Summary              |
-|  17 | Linux Environment Output      |
-|  18 | Final JSON Data Ready         |
-|  19 | Integration with Frontend     |
-|  20 | AWS Console Verification      |
-|  21 | Final Backend Output Preview  |
+|  01 | 01-AWS-CLI-INSTALLED          |
+|  02 | 02-IAM-User-Creation-Name     |
+|  03 | 03-IAM-User-Policies          |
+|  04 | 04-IAM-AccessKey-Created      |
+|  05 | 05-AWS-CLI-Configured         |
+|  06 | 06-EC2-Launch-Page            |
+|  07 | 07-EC2-Configuration          |
+|  08 | 08-EC2-Running                |
+|  09 | 09-EC2-Describe-Instances     |
+|  10 | 10-S3-Bucket-Config           |
+|  11 | 11-S3-Bucket-List             |
+|  12 | 12-IAM-Add-Permissions        |
+|  13 | 13-IAM-S3FullAccess-Attached  |
+|  14 | 14-S3-Upload-Success          |
+|  15 | 15-S3-Bucket-File-List        |
+|  16 | 16-Boto3-Installed            |
+|  17 | 17-Boto3-STS-Verified         |
+|  18 | 18-EC2-Data-Fetched           |
+|  19 | 19-EC2-Data-File              |
+|  20 | 20-AWS-Full-Data              |
+|  21 | 21-AWS-Data-File              |
 
 
 🖼️ Each screenshot is placed inside the /screenshots directory in this repository for detailed workflow reference.
 
+---
 
-🔗 Related Repositories
-Component	Repository Link
-Frontend	Cloud Infrastructure Dashboard Frontend
+## 🧠 Future Enhancements
 
-🧠 Future Enhancements
+- Add API layer using Flask/FastAPI for dynamic data fetch
 
-Add API layer using Flask/FastAPI for dynamic data fetch
+- Integrate CloudWatch metrics for deeper insights
 
-Integrate CloudWatch metrics for deeper insights
+- Store and visualize metrics over time
 
-Store and visualize metrics over time
+- Enable real-time updates from AWS using event triggers
 
-Enable real-time updates from AWS using event triggers
+---
 
-
-🏁 Conclusion
+## 🏁 Conclusion
 
 This backend system forms the foundation of the Cloud Infrastructure Dashboard, connecting AWS resource data with a user-friendly visualization layer.
 It showcases end-to-end AWS understanding, DevOps automation, and data handling proficiency — perfect for cloud portfolio presentation.
 
-📸 Screenshot Summary
+---
 
-Total Screenshots: 21
+## 🔗 Related Repositories
 
-Directory: /screenshots
+### 👉 Frontend Repository:
 
-Type: AWS Console + CLI Outputs
+🔗 [Cloud Infrastructure Dashboard Frontend](https://github.com/adarshshivan/cloud-infrastructure-dashboard-frontend)
 
-Created with 💻 by Adarsh Shivan
+---
 
-☁️ Part of the CloudOps Suite Project Collection
+### ☁️ Part of the CloudOps Suite
+
+
+
